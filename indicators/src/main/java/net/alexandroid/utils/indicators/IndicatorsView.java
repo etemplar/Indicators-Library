@@ -337,6 +337,15 @@ public class IndicatorsView extends View implements ViewPager.OnPageChangeListen
 
     }
 
+    public void setNumOfIndicators(int num){
+        this.mNumOfIndicators = num;
+        invalidate();
+    }
+
+    public int getNumOfIndicators(){
+        return this.mNumOfIndicators;
+    }
+
     public void setSelectedDrawable(Drawable drawable) {
         mSelectedDrawable = drawable;
         convertDrawablesToBitmaps();
